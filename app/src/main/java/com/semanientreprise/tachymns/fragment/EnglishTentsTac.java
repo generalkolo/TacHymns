@@ -16,7 +16,6 @@ public class EnglishTentsTac extends Fragment {
 
 
     public EnglishTentsTac() {
-        // Required empty public constructor
     }
 
 
