@@ -1,0 +1,513 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semanientreprise.tachymns.fragment.EnglishConductTac">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/language_toggle_inc"
+        android:layout_marginTop="@dimen/margin_extra_small">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rules_of_conduct_capital"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_one"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_mattSixSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_one"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/mattSixSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_ephSixEighteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_one"
+                android:layout_toRightOf="@+id/tv_roc_mattSixSeven"
+                android:text="@string/ephSixEighteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_ephSixEighteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_two"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_genTwentyTwoThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_two"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/genTwentyTwoThree"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_psHundredAndEightTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_two"
+                android:layout_toRightOf="@+id/tv_roc_genTwentyTwoThree"
+                android:text="@string/roc_psHundredAndEightTwo"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_proverbsEightSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_two"
+                android:layout_toRightOf="@+id/tv_roc_psHundredAndEightTwo"
+                android:text="@string/proverbsEightSeventeen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_sosSevenTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_proverbsEightSeventeen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/sosSevenTwelve"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_sosSevenTwelve"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tv_rules_of_conduct_three"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_mattElevenFourteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_three"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/mattElevenFourteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_exodusTwentyTwoTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_three"
+                android:layout_toRightOf="@+id/tv_roc_mattElevenFourteen"
+                android:text="@string/exodusTwentyTwoTen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_actsTenTwentyFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_three"
+                android:layout_toRightOf="@+id/tv_roc_exodusTwentyTwoTen"
+                android:text="@string/actsTenTwentyFour"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_johnOneFortyOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_three"
+                android:layout_toRightOf="@+id/tv_roc_actsTenTwentyFour"
+                android:text="@string/johnOneFortyOne"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_johnOneFortyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_johnOneFortyOne"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/johnOneFortyFive"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_genEighteenNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_johnOneFortyOne"
+                android:layout_toRightOf="@+id/tv_roc_johnOneFortyFive"
+                android:text="@string/genEighteenNineteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_genEighteenNineteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_four"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv_roc_firstThessaloniansTwoSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_four"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/firstThessaloniansTwoSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_joelTwoSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_four"
+                android:layout_toRightOf="@+id/tv_roc_firstThessaloniansTwoSeven"
+                android:text="@string/joelTwoSeventeen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_malachiTwoSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_four"
+                android:layout_toRightOf="@+id/tv_roc_joelTwoSeventeen"
+                android:text="@string/malachiTwoSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_romansFifteenThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_malachiTwoSeven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/romansFifteenThirty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_secondCorinthiansOneEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_malachiTwoSeven"
+                android:layout_toRightOf="@+id/tv_roc_romansFifteenThirty"
+                android:text="@string/secondCorinthiansOneEleven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_ephSixNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_malachiTwoSeven"
+                android:layout_toRightOf="@+id/tv_roc_secondCorinthiansOneEleven"
+                android:text="@string/ephSixNineteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_hebThirteenSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_ephSixNineteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/hebThirteenSeventeenCloseBrace"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_hebThirteenSeventeen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_five"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_actsTwoFortySixFortySeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_five"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/actsTwoFortySixFortySeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_psHundredThirtyThreeOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_five"
+                android:layout_toRightOf="@+id/tv_roc_actsTwoFortySixFortySeven"
+                android:text="Psalm 133:1 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_psHundredThirtyThreeOne"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_six"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_galatiansSixSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_six"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/galatiansSixSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_proverbsTwentyTwoEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_six"
+                android:layout_toRightOf="@+id/tv_roc_actsTwoFortySixFortySeven"
+                android:text="@string/proverbsTwentyTwoEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_hoseaEightSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_six"
+                android:layout_toRightOf="@+id/tv_roc_proverbsTwentyTwoEight"
+                android:text="@string/hoseaEightSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_hoseaEightSeven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_seven"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_psalmsOneTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_seven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/psalmsOneTwo"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_psalmsOneOneNineSixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_seven"
+                android:layout_toRightOf="@+id/tv_roc_psalmsOneTwo"
+                android:text="@string/psalmsOneOneNineSixteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_psalmsOneOneNineSeventyTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_seven"
+                android:layout_toRightOf="@+id/tv_roc_psalmsOneOneNineSixteen"
+                android:text=" Psalms 119:72 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_romansFifteenFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_psalmsOneTwo"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/romansFifteenFour"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_secondTimothyThreeSixteenToSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_psalmsOneTwo"
+                android:layout_toRightOf="@+id/tv_roc_romansFifteenFour"
+                android:text="@string/secondTimothyThreeSixteenToSeventeen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_secondTimothyThreeSixteenToSeventeen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_eight"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_psalmsOneOneEightTwentySevenToTwentyNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_eight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( Psalms 118:27-29 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_ecclesiastesFiveOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_eight"
+                android:layout_toRightOf="@+id/tv_roc_psalmsOneOneEightTwentySevenToTwentyNine"
+                android:text=" Ecclesiastes 5:1 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_romansTwelveEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_eight"
+                android:layout_toRightOf="@+id/tv_roc_ecclesiastesFiveOne"
+                android:text=" Romans 12:11 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_roc_jamesOneNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_romansTwelveEleven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text=" James 1:19 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_conduct_closingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_roc_jamesOneNineteen"
+                android:layout_marginLeft="@dimen/margin_medium_small"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rules_of_conduct_closingText"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_roc_psalmsHundredFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_conduct_closingText"
+                android:layout_marginLeft="@dimen/margin_extra_small"
+                android:text="( Psalms 100:4 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

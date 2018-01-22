@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ViewingText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#330066"
+        android:gravity="center|left"
+        android:padding="@dimen/margin_extra_small"
+        android:text="VIEWING OPTIONS"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/sortHymnNumber_img"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ViewingText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_format_list_numbered_black" />
+
+    <TextView
+        android:id="@+id/sortHymnNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ViewingText"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/sortHymnNumber_img"
+        android:gravity="center|left"
+        android:text="View By Hymn Number"
+        android:textColor="@color/blue" />
+
+    <View
+        android:id="@+id/sort_HymnNumberView"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/sortHymnNumber"
+        android:background="@color/gainsboro" />
+
+    <ImageView
+        android:id="@+id/HymnChorus_img"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sort_HymnNumberView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_sort_black_24dp" />
+
+    <TextView
+        android:id="@+id/sortHymnChorus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sort_HymnNumberView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/HymnChorus_img"
+        android:gravity="center|left"
+        android:text="View By Chorous"
+        android:textColor="@color/blue" />
+
+    <View
+        android:id="@+id/sort_hymnChorus"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/sortHymnChorus"
+        android:background="@color/gainsboro" />
+
+    <ImageView
+        android:id="@+id/firstLine_img"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sort_hymnChorus"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_view_headline_black" />
+
+    <TextView
+        android:id="@+id/sortFirstLine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sortHymnChorus"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/firstLine_img"
+        android:gravity="center|left"
+        android:text="View By First Line"
+        android:textColor="@color/blue" />
+
+    <View
+        android:id="@+id/sort_FirstLineView"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/sortFirstLine"
+        android:background="@color/gainsboro" />
+</RelativeLayout>

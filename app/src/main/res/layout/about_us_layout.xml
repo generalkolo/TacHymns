@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ash">
+
+    <ImageView
+        android:id="@+id/achievers_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_achievers" />
+
+    <TextView
+        android:id="@+id/siteLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/achievers_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Visit us @www.achievers.com.ng"
+        android:textColor="@color/faded_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/supportLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siteLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:gravity="center"
+        android:text="Support@achievers.com.ng"
+        android:textColor="@color/faded_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/versionNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supportLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:gravity="center"
+        android:text="TAC Hymns Version 1.0"
+        android:textColor="@color/faded_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/versionNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:gravity="center"
+        android:text="@string/achievers_solutions_inc"
+        android:textColor="@color/faded_black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/copyright"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_extra_small"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ok_string" />
+</RelativeLayout>

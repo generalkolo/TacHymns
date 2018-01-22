@@ -1,0 +1,884 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semanientreprise.tachymns.fragment.EnglishTentsTac">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/language_toggle_inc"
+        android:layout_marginTop="@dimen/margin_extra_small">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_tents_of_church"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tents_of_church"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tents_of_church"
+                android:layout_marginLeft="@dimen/margin_medium_small"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_introText"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_introText"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_one"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_genOneOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_one"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/genOneOne"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_mattThreeSixteenSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_one"
+                android:layout_toRightOf="@+id/tv_toc_genOneOne"
+                android:text="@string/mattThreeSixteenSeventeen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstJohnFiveSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_one"
+                android:layout_toRightOf="@+id/tv_toc_mattThreeSixteenSeventeen"
+                android:text="@string/firstJohnFiveSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_mattThreeSixteenSeventeen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_two"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_genThreeNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_two"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/genThreeNineteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_isaiahFiftyThreeSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_two"
+                android:layout_toRightOf="@+id/tv_toc_genThreeNineteen"
+                android:text="@string/isaiahFiftyThreeSix"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwoThirtyEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_two"
+                android:layout_toRightOf="@+id/tv_toc_isaiahFiftyThreeSix"
+                android:text="@string/actsTwoThirtyEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsSeventeenThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_two"
+                android:layout_toRightOf="@+id/tv_toc_actsTwoThirtyEight"
+                android:text="@string/actsSeventeenThirty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_johnFiveTwentyFiveToTwentyEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_genThreeNineteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/johnFiveTwentyFiveToTwentyEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_danielTwelveTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_genThreeNineteen"
+                android:layout_toRightOf="@+id/tv_toc_johnFiveTwentyFiveToTwentyEight"
+                android:text=" Daniel 12:2 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansTwoSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_genThreeNineteen"
+                android:layout_toRightOf="@+id/tv_toc_danielTwelveTwo"
+                android:text="@string/romansTwoSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansSixTwentyThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_genThreeNineteen"
+                android:layout_toRightOf="@+id/tv_toc_romansTwoSeven"
+                android:text="@string/romansSixTwentyThree"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstJohnOneOneToTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_romansSixTwentyThree"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/firstJohnOneOneToTwo"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_firstJohnOneOneToTwo"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_three"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_johnEightFortySix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_three"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( John 8:46 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_johnFourteenThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_three"
+                android:layout_toRightOf="@+id/tv_toc_johnEightFortySix"
+                android:text="14:30 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_colossiansOneFifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_three"
+                android:layout_toRightOf="@+id/tv_toc_johnFourteenThirty"
+                android:text=" Col. 1:15 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_secondCorinthiansFiveNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_three"
+                android:layout_toRightOf="@+id/tv_toc_colossiansOneFifteen"
+                android:text=" 2 Cor 5:19 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romThreeTwentyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_toc_secondCorinthiansFiveNineteen"
+                android:layout_below="@+id/tv_tenets_of_church_three"
+                android:text=" Rom. 3:25 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwoThirtySix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_romThreeTwentyFive"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text=" Acts 2:36 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_philTwoNineToEleven"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tv_toc_actsTwoThirtySix"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_romThreeTwentyFive"
+                android:text=" Phil. 2:9-11 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_FirstThessFourSixteenToSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_toc_philTwoNineToEleven"
+                android:text=" 1 Thess. 4:16-17 ,"
+                android:layout_below="@+id/tv_toc_romThreeTwentyFive"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_revelationTwentyTwoTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_FirstThessFourSixteenToSeventeen"
+                android:text=" Rev. 22:20 )"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_revelationTwentyTwoTwenty"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_four"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwoThirtyEightfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_four"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/actsTwoThirtyEightopen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_lukeFifteenSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_four"
+                android:layout_toRightOf="@+id/tv_toc_actsTwoThirtyEightfour"
+                android:text="@string/lukeFifteenSeven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansFourTwentyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_four"
+                android:layout_toRightOf="@+id/tv_toc_lukeFifteenSeven"
+                android:text="@string/romansFourTwentyFive"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_FirstCorinthiansElevenTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_four"
+                android:layout_toRightOf="@+id/tv_toc_romansFourTwentyFive"
+                android:text=" 5:16 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansOneThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_below="@+id/tv_toc_actsTwoThirtyEightfour"
+                android:text="@string/firstCorinthiansOneThirty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstThessFourThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_actsTwoThirtyEightfour"
+                android:layout_toRightOf="@+id/tv_toc_firstCorinthiansOneThirty"
+                android:text="@string/firstThessFourThirty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_firstCorinthiansOneThirty"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_five"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansTwelveEightToEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_five"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/firstCorinthiansTwelveEightToEleven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_markSixteenSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_five"
+                android:layout_marginLeft="@dimen/margin_medium_small"
+                android:layout_toRightOf="@+id/tv_toc_firstCorinthiansTwelveEightToEleven"
+                android:text="Mark 16:17 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwoFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_five"
+                android:layout_toRightOf="@+id/tv_toc_markSixteenSeventeen"
+                android:text="@string/actsTwoFour"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_galatiansFiveTwentyTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_five"
+                android:layout_toRightOf="@+id/tv_toc_actsTwoFour"
+                android:text="@string/galatiansFiveTwentyTwo"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_galatiansFiveTwentyTwo"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_six"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansTwelveFourToEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_six"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/firstCorinthiansTwelveFourToEleven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_firstCorinthiansTwelveFourToEleven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_seven"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansSixFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_seven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( Rom 6:4 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansSixEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_seven"
+                android:layout_toRightOf="@+id/tv_toc_romansSixFour"
+                android:text=" 6:11 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansSixThirteenToFourteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_seven"
+                android:layout_toRightOf="@+id/tv_toc_romansSixEleven"
+                android:text=" 6:13-14 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_lukeThreeTwentyOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_seven"
+                android:layout_toRightOf="@+id/tv_toc_romansSixThirteenToFourteen"
+                android:text=" Luke 3:21 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_lukeTwoTwentyTwoToTwentyFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_seven"
+                android:layout_toRightOf="@+id/tv_toc_lukeThreeTwentyOne"
+                android:text=" 2:22-24 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_lukeTwentyTwoNineteenToTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_lukeTwoTwentyTwoToTwentyFour"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text=" Luke 22:19-20,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_markSixteenSixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_lukeTwoTwentyTwoToTwentyFour"
+                android:layout_toRightOf="@+id/tv_toc_lukeTwentyTwoNineteenToTwenty"
+                android:text=" Mark 16:16 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_markSixteenThirtyFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_lukeTwoTwentyTwoToTwentyFour"
+                android:layout_toRightOf="@+id/tv_toc_markSixteenSixteen"
+                android:text="16:34 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_markTenSixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_lukeTwoTwentyTwoToTwentyFour"
+                android:layout_toRightOf="@+id/tv_toc_markSixteenThirtyFour"
+                android:text="10:16 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_mattTwentySixTwentyOneToTwentyNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_markTenSixteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text=" Mat. 26:21-29,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwentySeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_markTenSixteen"
+                android:layout_toRightOf="@+id/tv_toc_mattTwentySixTwentyOneToTwentyNine"
+                android:text=" Acts 20:7 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_mattTwentySixTwentyOneToTwentyNine"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_eight"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_secondTimothyThreeSixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/secondTimothyThreeSixteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_secondPeterOneTwentyOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eight"
+                android:layout_toRightOf="@+id/tv_toc_secondTimothyThreeSixteen"
+                android:text="@string/secondPeterOneTwentyOne"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_secondTimothyThreeSixteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_nine"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_ephFourElevenToThirteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_nine"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( Eph. 4:11-13 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansTwelveTwentyEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_nine"
+                android:layout_toRightOf="@+id/tv_toc_ephFourElevenToThirteen"
+                android:text="@string/firstCorinthiansTwelveTwentyEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_firstCorinthiansTwelveTwentyEight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_ten"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansTenTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_ten"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( 1 Cor. 10:12 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstCorinthiansFifteenOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_ten"
+                android:layout_toRightOf="@+id/tv_toc_firstCorinthiansTenTwelve"
+                android:text=" 15:1 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstJohnFiveEleven"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_ten"
+                android:layout_toRightOf="@+id/tv_toc_firstCorinthiansFifteenOne"
+                android:text=" 1 John 5:11 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstJohnFiveTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_ten"
+                android:layout_toRightOf="@+id/tv_toc_firstJohnFiveEleven"
+                android:text=" 5:12 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_johnFifteenFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_ten"
+                android:layout_toRightOf="@+id/tv_toc_firstJohnFiveTwelve"
+                android:text=" John 15:4 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_johnEightFiftyOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_johnFifteenFour"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text=" John 8:51,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_romansFiveTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_johnFifteenFour"
+                android:layout_toRightOf="@+id/tv_toc_johnEightFiftyOne"
+                android:text=" Rom. 5:1-2 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstTimothyFourOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_johnFifteenFour"
+                android:layout_toRightOf="@+id/tv_toc_romansFiveTwelve"
+                android:text=" 1 Tim. 4:1 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_firstTimothyFourSixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_johnFifteenFour"
+                android:layout_toRightOf="@+id/tv_toc_firstTimothyFourOne"
+                android:text=" 4:16;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_secondTimothyThreeThirteenToFifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_below="@+id/tv_toc_johnEightFiftyOne"
+                android:text=" 2 Tim. 3:13-15 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_colossiansOneTwentyOneToTwentyThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_johnEightFiftyOne"
+                android:layout_toRightOf="@+id/tv_toc_secondTimothyThreeThirteenToFifteen"
+                android:text=" Col. 1:21-23 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_eleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_secondTimothyThreeThirteenToFifteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_eleven"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_toc_malachiThreeTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eleven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/malachiThreeTen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_mattTwentyThreeTwentyThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eleven"
+                android:layout_toRightOf="@+id/tv_toc_malachiThreeTen"
+                android:text="@string/mattTwentyThreeTwentyThree"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_hebSevenOneToFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eleven"
+                android:layout_toRightOf="@+id/tv_toc_mattTwentyThreeTwentyThree"
+                android:text="Heb. 7:1-4 ,"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_lukeSixThirtyEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eleven"
+                android:layout_toRightOf="@+id/tv_toc_hebSevenOneToFour"
+                android:text="@string/lukeSixThirtyEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_toc_actsTwentyThirtyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tenets_of_church_eleven"
+                android:layout_toRightOf="@+id/tv_toc_lukeSixThirtyEight"
+                android:text="@string/actsTwentyThirtyFive"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_tenets_of_church_twelve"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_toc_actsTwentyThirtyFive"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/tenets_of_church_twelve"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

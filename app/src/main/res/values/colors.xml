@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="ash">#9b9396</color>
+    <color name="faded_black">#0b0507</color>
+    <color name="red">#ec0505</color>
+    <color name="toggleColor">#bababa</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="gainsboro">#dcdcdc</color>
+</resources>

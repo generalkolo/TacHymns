@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">TAC Hymns</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_song_title">Enter song title</string>
+    <string name="one_fold_one_shepard">ONE FOLD AND ONE SHEPARD</string>
+    <string name="designed_by_semani_text">Designed By SEMANI ENTERPRISE</string>
+
+    <string-array name="languages">
+        <item>ENG</item>
+        <item>YOR</item>
+        <item>HAU</item>
+        <item>IGBO</item>
+    </string-array>
+
+    <string name="tab_label1">Hymns</string>
+    <string name="tab_label2">Favourites</string>
+
+    <string name="rules_of_believe">Rules of Belief</string>
+    <string name="rules_of_conduct">Rules of Conduct</string>
+    <string name="tenet">Tenet</string>
+
+    <string name="ok_string">OK</string>
+    <string name="achievers_solutions_inc">© 2018 SEMAMI Enterprise</string>
+    <string name="song_text_demo">This is the song text</string>
+    <string name="hymn_number_title_dummy">792. THIS IS THE HYMNS NAME</string>
+    <string name="hymn_scripture_dummy">They went unto their tents joyful and glad of heart - 1Kings 8:66</string>
+    <string name="hymn_stanzas_dummy">1. This would be how the stanzers\n of the hymns would look per link \n and i hope they are looking good tho</string>
+    <string name="hymn_chrous_dummy">This would be the look of the chorus\n accross the entire application for\n better look and feel</string>
+
+
+    <string name="rulesOfBelieveEight">8.	Endeavoring to keep the unity of the Spirit in the bond of peace.</string>
+    <string name="rulesOfBelieveSeven">7. That you pray for and help every member, remembering that we are joint members in the Body of Christ.</string>
+    <string name="rulesOfBelieveSix">6. That you keep the counsels of the Church within the Church. </string>
+    <string name="rulesOfBelieveFive">5. That you contribute towards the support of the cause, as taught unto us in the Word of God.</string>
+    <string name="rulesOfBelieveFour">4. Your conformity with the fundamental doctrines of the Church, as well as with the two ordinances, namely baptism by immersion, and the Lords\'s Supper</string>
+    <string name="rulesOfBelieveThree">3. Your presence in the meetings of the Church and abidance in full communion; that is, not to absent yourslf more than three times from communion without sufficient reason given for your absence</string>
+    <string name="rulesOfBelieveTwo">2. Your acknowledgement of and obedience to the Order and Officers of the Church: Apostles, Prophets, Evangelists, Pastors, Teachers, Elders and Deacons.</string>
+    <string name="rulesOfBelieveOne">1. A personal testimony of your Salvation in Christ.</string>
+    <string name="rulesOfBelieveIntroText">The following are expected of every member of the church</string>
+    <string name="actsFourTwelve">( Acts 4:12 ;</string>
+    <string name="romTenNineteen">Rom 10:9 )</string>
+    <string name="hebThirteenSeventeen">( Heb 13:17 ;</string>
+    <string name="ephFourEleven">Eph 4: 11 ;</string>
+    <string name="FirstCorinthiansTwelveTwentyEight">1 Cor. 12:28 )</string>
+    <string name="hebTenTwentyFive">( Heb 10:25 )</string>
+    <string name="secondJohnOneNine">( 2 John 1:9 ;</string>
+    <string name="romansSixFour">Rom 6:4 ;</string>
+    <string name="lukeTwentyTwoNineteen">Luke 22:19 ;</string>
+    <string name="FirstCorinthiansElevenTwelve">1 Cor 11:12 )</string>
+    <string name="genFourteenTwenty">( Gen 14:20 ;</string>
+    <string name="genTwentyEightTwentyTwo">28:22 ;</string>
+    <string name="leviticusTwentySevenThirty">Lev 27:30 ;</string>
+    <string name="FirstChroniclesTwentyNineFourteen">1 Chron 29:14 ;</string>
+    <string name="hebSevenEight">Heb 7:8 )</string>
+    <string name="mattSevenSix">( Matthew 7:6 )</string>
+    <string name="rules_of_conduct_capital">RULES OF CONDUCT</string>
+    <string name="rules_of_conduct_one">1. Never come to the House of God without praying before coming.</string>
+    <string name="mattSixSeven">( Matthew 6:7 ;</string>
+    <string name="ephSixEighteen"> Ephesians 6:18 )</string>
+    <string name="rules_of_conduct_two">2. Be in your seat at the commencement of the service. You will thus be a good example to those who are late and neglectful.</string>
+    <string name="genTwentyTwoThree">( Genesis 22:3 ;</string>
+    <string name="roc_psHundredAndEightTwo">Psalms 108:2 ;</string>
+    <string name="proverbsEightSeventeen">Proverbs 8:17 ;</string>
+    <string name="sosSevenTwelve">Song of Solomon 7:12 )</string>
+    <string name="tv_rules_of_conduct_three">3. Bring your children with you to the House of God. Relatives and servants also have souls. It is your duty and privilege to take care of them.</string>
+    <string name="exodusTwentyTwoTen">Exodus 22:10 ;</string>
+    <string name="actsTenTwentyFour">Acts 10:24 ;</string>
+    <string name="johnOneFortyOne">John 1:41 ;</string>
+    <string name="johnOneFortyFive">John 1:45 ;</string>
+    <string name="genEighteenNineteen">Genesis 18:19 )</string>
+    <string name="rules_of_conduct_four">4. Make your Pastor your personal friend. His sympathy, support and counsel are needed by you. Constantly pray for him.</string>
+    <string name="mattElevenFourteen">( Matthew 11:14;</string>
+    <string name="firstThessaloniansTwoSeven">( 1 Thessalonians 2:7 ;</string>
+    <string name="joelTwoSeventeen">Joel 2:17 ;</string>
+    <string name="malachiTwoSeven">Malachi 2:7 ;</string>
+    <string name="romansFifteenThirty">Romans 15:30 ;</string>
+    <string name="secondCorinthiansOneEleven">2 Corinthians 1:11 ;</string>
+    <string name="ephSixNineteen">Ephesians 6:19 ;</string>
+    <string name="hebThirteenSeventeenCloseBrace">Hebrews 13:17 )</string>
+    <string name="rules_of_conduct_five">5. Make the Church your spiritual home</string>
+    <string name="actsTwoFortySixFortySeven">( Acts 2:46-47 ;</string>
+    <string name="rules_of_conduct_six">6. When conversing never speak disrespectfully or criticizingly of God’s servants or their ministrations, in the presence of your children. If you sow to the wind, you may expect to reap the whirlwind.</string>
+    <string name="galatiansSixSeven">( Galatians 6:7 ;</string>
+    <string name="proverbsTwentyTwoEight">Proverbs 22:8 ;</string>
+    <string name="hoseaEightSeven"> Hosea 8:7 )</string>
+    <string name="rules_of_conduct_seven">7. Take your Bible with you to the House of God.</string>
+    <string name="psalmsOneTwo">( Psalms 1:2 ;</string>
+    <string name="psalmsOneOneNineSixteen">Psalms 119:16 ;</string>
+    <string name="romansFifteenFour">Romans 15:4 ;</string>
+    <string name="secondTimothyThreeSixteenToSeventeen">2 Timothy 3:16-17 )</string>
+    <string name="rules_of_conduct_eight">8. Enter reverently, pray fervently, listen attentively, give praise from a grateful heart and worship God in the beauty of holiness.</string>
+    <string name="rules_of_conduct_closingText">“Enter into His gates with thanksgiving and into His courts with praise, be thankful unto Him and bless His name”</string>
+    <string name="tents_of_church">TENTS OF THE CHURCH</string>
+    <string name="rules_of_belief">RULES OF BELIEF</string>
+    <string name="tenets_of_church_introText">Every member of the Church is expected to have the knowledge of the following and believe them.</string>
+    <string name="tenets_of_church_one">1. The Unity of the God-head and the Trinity of the persons there-in.</string>
+    <string name="genOneOne">( Genesis 1:1 ;</string>
+    <string name="mattThreeSixteenSeventeen">Mat 3:16-17 ;</string>
+    <string name="firstJohnFiveSeven">1 John 5:7 )</string>
+    <string name="tenets_of_church_two">2. The utter depravity of human nature, the necessity for repentance and regeneration and the eternal doom of the finally impenitent (i.e. unrepentant).</string>
+    <string name="genThreeNineteen">( Gen 3:1-19 ;</string>
+    <string name="isaiahFiftyThreeSix">Isaiah 53:6 ;</string>
+    <string name="actsTwoThirtyEight">Acts 2:38 ;</string>
+    <string name="actsSeventeenThirty">Acts 17:30 ;</string>
+    <string name="johnFiveTwentyFiveToTwentyEight">John 5:28-29 ;</string>
+    <string name="romansTwoSeven">Romans 2:7 ;</string>
+    <string name="romansSixTwentyThree">6:23 ;</string>
+    <string name="firstJohnOneOneToTwo">1John 1:1-2 )</string>
+    <string name="tenets_of_church_three">3. The Virgin Birth, Sinless Life, Atoning Death, Triumphant Resurrection, Ascension and Abiding intercession of Our Lord Jesus Christ. His second coming and millennial reign upon earth.</string>
+    <string name="tenets_of_church_four">4. Justification and sanctification of the believer through the finished work of Christ.</string>
+    <string name="tenets_of_church_five">5. The baptism of the Holy Ghost for believers with signs following.</string>
+    <string name="tenets_of_church_six">6. The nine gifts of the Holy Ghost for the edification, exhortation and comfort of the Church, which is the body of Christ.</string>
+    <string name="tenets_of_church_seven">7. The sacraments of baptism by immersion and of the Lord’s Supper.</string>
+    <string name="tenets_of_church_eight">8. The divine inspiration and authority of the Holy Scriptures.</string>
+    <string name="tenets_of_church_nine">9. Church government by Apostles, Prophets, Evangelists, Pastors, Teachers, Elders and Deacons.</string>
+    <string name="tenets_of_church_ten">10. The possibility of falling from Grace.</string>
+    <string name="tenets_of_church_eleven">11. The obligatory nature of Tithes and Offerings.</string>
+    <string name="tenets_of_church_twelve">12. Divine Healing through obedience to the command of our Lord Jesus Christ and Faith in His Name and merit of His Blood for all sickness, disease and infirmities.</string>
+    <string name="actsTwoThirtyEightopen">( Acts 2:38 ,</string>
+    <string name="lukeFifteenSeven">Luke 15:7 ,</string>
+    <string name="romansFourTwentyFive">Rom. 4:25 ;</string>
+    <string name="firstCorinthiansOneThirty">1 Cor. 1:30 ,</string>
+    <string name="firstThessFourThirty">1 Thess. 4:30 )</string>
+    <string name="firstCorinthiansTwelveEightToEleven">( 1 Cor. 12:8-11 ,</string>
+    <string name="actsTwoFour">Acts 2:4 ,</string>
+    <string name="galatiansFiveTwentyTwo">Gal. 5:22 )</string>
+    <string name="firstCorinthiansTwelveFourToEleven">( 1 Cor. 12:4-11 )</string>
+    <string name="secondTimothyThreeSixteen">( 2 Tim. 3:16 ,</string>
+    <string name="secondPeterOneTwentyOne">2 Peter 1:21 )</string>
+    <string name="firstCorinthiansTwelveTwentyEight">1 Cor. 12:28 )</string>
+    <string name="malachiThreeTen">( Mal. 3:10 ,</string>
+    <string name="mattTwentyThreeTwentyThree">Matt. 23:23 ,</string>
+    <string name="lukeSixThirtyEight">Luke 6:38 ,</string>
+    <string name="actsTwentyThirtyFive">Acts 20:35 )</string>
+</resources>

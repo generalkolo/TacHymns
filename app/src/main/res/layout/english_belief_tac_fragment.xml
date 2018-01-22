@@ -1,0 +1,372 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semanientreprise.tachymns.fragment.EnglishBeliefTac">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/language_toggle_inc"
+        android:layout_marginTop="@dimen/margin_extra_small">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rules_of_belief"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief"
+                android:layout_marginLeft="@dimen/margin_medium_small"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveIntroText"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_introText"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveOne"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_actsFourTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_one"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/actsFourTwelve"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_romTenNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_one"
+                android:layout_toRightOf="@+id/tv_rob_actsFourTwelve"
+                android:text="@string/romTenNineteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_romTenNineteen"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveTwo"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_hebThirteenSeventeen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_two"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/hebThirteenSeventeen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_ephFourEleven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_two"
+                android:layout_toRightOf="@+id/tv_rob_hebThirteenSeventeen"
+                android:text="@string/ephFourEleven"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_FirstCorinthiansTwelveTwentyEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_two"
+                android:layout_toRightOf="@+id/tv_rob_ephFourEleven"
+                android:text="@string/FirstCorinthiansTwelveTwentyEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_FirstCorinthiansTwelveTwentyEight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveThree"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_hebTenTwentyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_three"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/hebTenTwentyFive"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_hebTenTwentyFive"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveFour"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_secondJohnOneNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_four"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/secondJohnOneNine"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_romansSixFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_four"
+                android:layout_toRightOf="@+id/tv_rob_secondJohnOneNine"
+                android:text="@string/romansSixFour"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_lukeTwentyTwoNineteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_four"
+                android:layout_toRightOf="@+id/tv_rob_romansSixFour"
+                android:text="@string/lukeTwentyTwoNineteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_FirstCorinthiansElevenTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_four"
+                android:layout_toRightOf="@+id/tv_rob_lukeTwentyTwoNineteen"
+                android:text="@string/FirstCorinthiansElevenTwelve"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_FirstCorinthiansElevenTwelve"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveFive"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_genFourteenTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_five"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/genFourteenTwenty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_genTwentyEightTwentyTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_five"
+                android:layout_marginLeft="@dimen/margin_medium_small"
+                android:layout_toRightOf="@+id/tv_rob_genFourteenTwenty"
+                android:text="@string/genTwentyEightTwentyTwo"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_leviticusTwentySevenThirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_five"
+                android:layout_toRightOf="@+id/tv_rob_genTwentyEightTwentyTwo"
+                android:text="@string/leviticusTwentySevenThirty"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_FirstChroniclesTwentyNineFourteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_five"
+                android:layout_toRightOf="@+id/tv_rob_leviticusTwentySevenThirty"
+                android:text="@string/FirstChroniclesTwentyNineFourteen"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_hebSevenEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_five"
+                android:layout_toRightOf="@+id/tv_rob_FirstChroniclesTwentyNineFourteen"
+                android:text="@string/hebSevenEight"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_hebSevenEight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveSix"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_mattSevenSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_six"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/mattSevenSix"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_mattSevenSix"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveSeven"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_hebTenTwentyFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_seven"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( Heb 10: 24 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_FirstCorinthiansTwelveTwentyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_seven"
+                android:layout_toRightOf="@+id/tv_rob_hebTenTwentyFour"
+                android:text=" 1 Cor. 12:25 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_FirstTimothyTwoOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_seven"
+                android:layout_toRightOf="@+id/tv_rob_FirstCorinthiansTwelveTwentyFive"
+                android:text=" 1 Tim 2:1 ;"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rob_GalatiansSixTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_seven"
+                android:layout_toRightOf="@+id/tv_rob_FirstTimothyTwoOne"
+                android:text=" Gal 6:2 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_rules_of_belief_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rob_GalatiansSixTwo"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_extra_small"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/rulesOfBelieveEight"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_rob_ephFOurThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rules_of_belief_eight"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="( Eph 4:3 )"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

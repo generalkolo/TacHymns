@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/settings_cont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.semanientreprise.tachymns.Activity.Settings">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/lang_st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Language"
+                android:textColor="@color/faded_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sub_lang_st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lang_st"
+                android:text="User interface language (restart required)"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/lang_view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/sub_lang_st"
+                android:layout_marginTop="2dp"
+                android:background="@color/ash" />
+
+            <TextView
+                android:id="@+id/display_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lang_view"
+                android:layout_marginTop="10dp"
+                android:text="Text Size"
+                android:textColor="@color/faded_black"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/display_text_sb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display_text_size"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/display_text_real"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display_text_sb"
+                android:layout_marginTop="4dp"
+                android:text="This will be the display text size"
+                android:textColor="@color/faded_black"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/display_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/display_text_real"
+                android:layout_marginTop="2dp"
+                android:background="@color/ash" />
+
+            <TextView
+                android:id="@+id/confirm_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display_text_view"
+                android:layout_marginTop="5dp"
+                android:text="Confirm Closing"
+                android:textColor="@color/faded_black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/confirm_close_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/display_text_view"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/sub_confirm_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_close"
+                android:text="Confirm if to close on back button"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/confirm_close_view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/sub_confirm_close"
+                android:layout_marginTop="2dp"
+                android:background="@color/ash" />
+
+            <TextView
+                android:id="@+id/background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirm_close_view"
+                android:layout_marginTop="5dp"
+                android:text="Background Color"
+                android:textColor="@color/faded_black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/white_bk"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/background"
+                android:layout_marginLeft="10dp"
+                android:src="@android:drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/black_bk"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/background"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_delete" />
+
+            <TextView
+                android:id="@+id/white_bk_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/white_bk"
+                android:text="White Background"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/black_bk_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/black_bk"
+                android:text="Black Background"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/background_view"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/white_bk_txt"
+                android:layout_marginTop="3dp"
+                android:background="@color/ash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/background_view"
+                android:layout_marginTop="5dp"
+                android:text="Allow auto scroll"
+                android:textColor="@color/faded_black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/confirm_auto_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/background_view"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

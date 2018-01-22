@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_extra_small"
+    android:layout_marginRight="@dimen/margin_extra_small"
+    tools:context="com.semanientreprise.tachymns.fragment.RulesOfBelieveFrag">
+
+    <include
+        android:id="@+id/language_toggle_inc"
+        layout="@layout/languages_toggle" />
+
+    <FrameLayout
+        android:id="@+id/rob_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/language_toggle_inc"
+        />
+
+</RelativeLayout>
