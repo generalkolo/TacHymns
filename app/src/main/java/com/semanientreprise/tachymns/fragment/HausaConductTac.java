@@ -16,7 +16,6 @@ public class HausaConductTac extends Fragment {
 
 
     public HausaConductTac() {
-        // Required empty public constructor
     }
 
 
