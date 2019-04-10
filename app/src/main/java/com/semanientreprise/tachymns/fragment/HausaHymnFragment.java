@@ -8,17 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.semanientreprise.tachymns.R;
+import com.semanientreprise.tachymns.utils.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HausaHymnFragment extends Fragment {
+public class HausaHymnFragment extends BaseFragment {
 
 
-    public HausaHymnFragment() {
-        // Required empty public constructor
-    }
-
+    public HausaHymnFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

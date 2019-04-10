@@ -1,4 +1,4 @@
-package com.semanientreprise.tachymns.Activity;
+package com.semanientreprise.tachymns.activities;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

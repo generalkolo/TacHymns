@@ -14,6 +14,7 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/margin_medium_small"
         android:layout_toLeftOf="@+id/favoriteImage"
+        android:fontFamily="@font/gs_regular"
         android:padding="@dimen/margin_extra_small"
         android:singleLine="true"
         android:text="@string/song_text_demo"

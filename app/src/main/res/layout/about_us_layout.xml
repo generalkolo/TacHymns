@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:background="@color/ash">
 
     <ImageView
@@ -20,7 +21,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Visit us @www.achievers.com.ng"
+        android:text="Visit us @www.semanienterprise.com.ng"
         android:textColor="@color/faded_black"
         android:textSize="18sp" />
 
@@ -32,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_extra_small"
         android:gravity="center"
-        android:text="Support@achievers.com.ng"
+        android:text="Support@semanienterprise.com.ng"
         android:textColor="@color/faded_black"
         android:textSize="18sp" />
 

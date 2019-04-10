@@ -8,17 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.semanientreprise.tachymns.R;
+import com.semanientreprise.tachymns.utils.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class IgboHymnFragment extends Fragment {
+public class IgboHymnFragment extends BaseFragment {
 
 
-    public IgboHymnFragment() {
-        // Required empty public constructor
-    }
-
+    public IgboHymnFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

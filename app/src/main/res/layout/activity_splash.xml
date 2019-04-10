@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_red_light"
-    tools:context="com.semanientreprise.tachymns.Activity.Splash">
+    tools:context="com.semanientreprise.tachymns.activities.Splash">
 
     <ImageView
         android:id="@+id/splash_img"
@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/margin_small"
+        android:fontFamily="@font/gs_regular"
         android:gravity="center"
         android:text="@string/designed_by_semani_text"
         android:textColor="@color/ash"

@@ -1,4 +1,4 @@
-package com.semanientreprise.tachymns.Activity;
+package com.semanientreprise.tachymns.activities;
 
 import android.app.Dialog;
 import android.app.SearchManager;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -15,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,14 +25,14 @@ import com.semanientreprise.tachymns.fragment.EnglishHymnFragment;
 import com.semanientreprise.tachymns.fragment.Favourite_Fragment;
 import com.semanientreprise.tachymns.fragment.Song_Fragment;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.toolbar) Toolbar mToolbar;
-    @Bind(R.id.tab_layout) TabLayout tabLayout;
-    @Bind(R.id.pager) ViewPager viewPager;
+    @BindView(R.id.toolbar) Toolbar mToolbar;
+    @BindView(R.id.tab_layout) TabLayout tabLayout;
+    @BindView(R.id.pager) ViewPager viewPager;
 
     private int[] tabIcons = {
             R.drawable.music_note_tab,
@@ -43,16 +45,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
         getSupportActionBar().setTitle("TAC HYMNS");
         getSupportActionBar().setLogo(R.drawable.ic_music_note);
 
-        viewPager = (ViewPager) findViewById(R.id.pager);
         setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
 
         //Method to set the logos for the fragments
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         //Main Menu Item Line of code
         getMenuInflater().inflate(R.menu.main_menu, menu);
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
@@ -103,8 +101,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
-                startActivity(new Intent(this, Settings.class));
-                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                changeAppColor();
                 break;
             case R.id.action_sort:
                 showSortingOptions();
@@ -113,8 +110,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DoctrineActivity.class));
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 break;
+            case R.id.action_about_us:
+                showAchievers();
+                break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void changeAppColor() {
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+        else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+        recreate();
+    }
+
+    //Method that displays Achievers information
+    private void showAchievers() {
+        final Dialog dialog = new Dialog(MainActivity.this, R.style.DialogSlideAnimCart);
+        dialog.setContentView(R.layout.about_us_layout);
+        dialog.setTitle("SEMANI Enterprise");
+        dialog.getWindow().setGravity(Gravity.CENTER);
+        Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.setCancelable(false);
+        dialog.show();
     }
 
     private void showSortingOptions() {
@@ -125,28 +152,32 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().setGravity(Gravity.BOTTOM);
         dialog.getWindow().setBackgroundDrawableResource(R.color.white);
         dialog.setCancelable(true);
-        TextView hymnNumberSortText = (TextView) dialog.getWindow().findViewById(R.id.sortHymnNumber);
-        TextView hymnChorusSortText = (TextView) dialog.getWindow().findViewById(R.id.sortHymnChorus);
-        TextView hymnFirstLineSortText = (TextView) dialog.getWindow().findViewById(R.id.sortFirstLine);
+        TextView hymnNumberSortText = dialog.getWindow().findViewById(R.id.sortHymnNumber);
+        TextView hymnChorusSortText = dialog.getWindow().findViewById(R.id.sortHymnChorus);
+        TextView hymnFirstLineSortText = dialog.getWindow().findViewById(R.id.sortFirstLine);
 
         hymnNumberSortText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                englishHymnFragment.changeSortingOptionClicked(1);
+//                englishHymnFragment.changeSortingOptionClicked(1);
+                new Song_Fragment().newInstance(1);
+                dialog.cancel();
             }
         });
 
         hymnChorusSortText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                englishHymnFragment.changeSortingOptionClicked(2);
+//                englishHymnFragment.changeSortingOptionClicked(2);
+                dialog.cancel();
             }
         });
 
         hymnFirstLineSortText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                englishHymnFragment.changeSortingOptionClicked(3);
+//                englishHymnFragment.changeSortingOptionClicked(3);
+                dialog.cancel();
             }
         });
 

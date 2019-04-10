@@ -11,27 +11,29 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.semanientreprise.tachymns.Activity.HymnDetails;
-import com.semanientreprise.tachymns.Custom.CustomItemClickListener;
-import com.semanientreprise.tachymns.Data.DataFeeder;
+import com.semanientreprise.tachymns.activities.HymnDetails;
+import com.semanientreprise.tachymns.utils.CustomItemClickListener;
+import com.semanientreprise.tachymns.data.DataFeeder;
 import com.semanientreprise.tachymns.R;
 import com.semanientreprise.tachymns.adapter.SongAdapter;
 import com.semanientreprise.tachymns.model.SongsGAndS;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Unbinder;
 
 public class Favourite_Fragment extends Fragment {
 
 
-    @Bind(R.id.favouriteHymnsRecView) RecyclerView favouriteHymnsRecView;
-    @Bind(R.id.favoritesLoader) Button favoritesLoader;
+    @BindView(R.id.favouriteHymnsRecView) RecyclerView favouriteHymnsRecView;
+    @BindView(R.id.favoritesLoader) Button favoritesLoader;
     private RecyclerView.LayoutManager favFragmentLinearLayoutManager;
     List<SongsGAndS> returnedList;
     private SongAdapter songAdapter;
+    private Unbinder unbinder;
 
     public Favourite_Fragment() {
         // Required empty public constructor
@@ -41,7 +43,7 @@ public class Favourite_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.favourite_frag, container, false);
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         favFragmentLinearLayoutManager = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.VERTICAL, false);
 
@@ -62,7 +64,7 @@ public class Favourite_Fragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick(R.id.favoritesLoader)

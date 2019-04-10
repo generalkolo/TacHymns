@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_sort"
-        android:icon="@drawable/ic_sort_black_24dp"
+        android:icon="@drawable/ic_sort_white_24dp"
         android:orderInCategory="2"
         android:title="Sort"
         app:showAsAction="always|collapseActionView" />
@@ -19,16 +18,23 @@
         app:showAsAction="always|collapseActionView" />
 
     <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/ic_settings_black_24dp"
-        android:orderInCategory="3"
-        android:title="settings"
-        app:showAsAction="always" />
-
-    <item
         android:id="@+id/action_tacDoctrine"
-        android:orderInCategory="4"
+        android:orderInCategory="3"
         android:title="TAC Doctrine"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_moon_white"
+        android:orderInCategory="4"
+        android:title="Toggle Night Mode"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/action_about_us"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:orderInCategory="5"
+        android:title="About Us"
+        app:showAsAction="ifRoom" />
 
 </menu>

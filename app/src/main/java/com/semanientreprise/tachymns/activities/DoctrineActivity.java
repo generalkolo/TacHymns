@@ -1,7 +1,8 @@
-package com.semanientreprise.tachymns.Activity;
+package com.semanientreprise.tachymns.activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -11,13 +12,13 @@ import com.semanientreprise.tachymns.fragment.RulesOfBelieveFrag;
 import com.semanientreprise.tachymns.fragment.RulesOfConductFrag;
 import com.semanientreprise.tachymns.fragment.TenetFrag;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class DoctrineActivity extends AppCompatActivity {
-    @Bind(R.id.toolbar) Toolbar mToolbar;
-    @Bind(R.id.tab_layout) TabLayout tabLayout;
-    @Bind(R.id.pager) ViewPager viewPager;
+    @BindView(R.id.toolbar) Toolbar mToolbar;
+    @BindView(R.id.tab_layout) TabLayout tabLayout;
+    @BindView(R.id.pager) ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +26,15 @@ public class DoctrineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doctrine);
         ButterKnife.bind(this);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-
-        getSupportActionBar().setTitle("TAC HYMNS");
-
-        viewPager = (ViewPager) findViewById(R.id.pager);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("TAC DOCTRINE");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
         setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
     }
 

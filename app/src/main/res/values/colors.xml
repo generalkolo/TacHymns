@@ -10,7 +10,7 @@
     <color name="faded_black">#0b0507</color>
     <color name="red">#ec0505</color>
     <color name="toggleColor">#bababa</color>
-    <color name="black">#000</color>
+    <color name="black">#000000</color>
     <color name="white">#fff</color>
     <color name="gainsboro">#dcdcdc</color>
 </resources>

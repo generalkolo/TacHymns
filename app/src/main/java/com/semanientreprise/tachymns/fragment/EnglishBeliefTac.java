@@ -12,12 +12,15 @@ import com.semanientreprise.tachymns.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class EnglishBeliefTac extends Fragment {
 
+
+    private Unbinder unbinder;
 
     public EnglishBeliefTac() {
         // Required empty public constructor
@@ -29,16 +32,14 @@ public class EnglishBeliefTac extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.english_belief_tac_fragment, container, false);
-        ButterKnife.bind(this, view);
-
-
+        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 
     @OnClick({R.id.tv_rob_actsFourTwelve, R.id.tv_rob_romTenNineteen, R.id.tv_rob_hebThirteenSeventeen,

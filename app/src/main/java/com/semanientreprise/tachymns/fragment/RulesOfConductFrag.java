@@ -11,27 +11,27 @@ import android.view.ViewGroup;
 import com.llollox.androidtoggleswitch.widgets.ToggleSwitch;
 import com.semanientreprise.tachymns.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RulesOfConductFrag extends Fragment implements ToggleSwitch.OnChangeListener {
 
-    @Bind(R.id.langToggleSwitch)
+    @BindView(R.id.langToggleSwitch)
     ToggleSwitch rulesOfConductToggleSwitch;
+    private Unbinder unbinder;
 
-    public RulesOfConductFrag() {
-        // Required empty public constructor
-    }
+    public RulesOfConductFrag() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.rules_of_conduct_frag, container, false);
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         rulesOfConductToggleSwitch.setCheckedPosition(0);
 
@@ -73,6 +73,6 @@ public class RulesOfConductFrag extends Fragment implements ToggleSwitch.OnChang
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 }

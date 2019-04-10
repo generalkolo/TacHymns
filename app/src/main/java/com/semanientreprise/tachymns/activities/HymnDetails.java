@@ -1,8 +1,9 @@
-package com.semanientreprise.tachymns.Activity;
+package com.semanientreprise.tachymns.activities;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -16,25 +17,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.llollox.androidtoggleswitch.widgets.ToggleSwitch;
-import com.semanientreprise.tachymns.Data.DataFeeder;
+import com.semanientreprise.tachymns.data.DataFeeder;
 import com.semanientreprise.tachymns.R;
+import com.semanientreprise.tachymns.fragment.EnglishHymnFragment;
 import com.semanientreprise.tachymns.model.SongsGAndS;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnChangeListener {
 
-    @Bind(R.id.hymnNumberTitle) TextView hymnNumberTitle;
-    @Bind(R.id.hymnScripture) TextView hymnScripture;
-    @Bind(R.id.hymnStanzas) TextView hymnStanzas;
-    @Bind(R.id.mToolbar) Toolbar hymnDetailsToolbar;
-    @Bind(R.id.backButton) ImageView backButton;
-    @Bind(R.id.forwardButton) ImageView forwardButton;
-    @Bind(R.id.langToggleSwitch) ToggleSwitch hymnDetailsToggleSwitch;
+    @BindView(R.id.hymnNumberTitle) TextView hymnNumberTitle;
+    @BindView(R.id.hymnScripture) TextView hymnScripture;
+    @BindView(R.id.hymnStanzas) TextView hymnStanzas;
+    @BindView(R.id.mToolbar) Toolbar hymnDetailsToolbar;
+    @BindView(R.id.backButton) ImageView backButton;
+    @BindView(R.id.forwardButton) ImageView forwardButton;
+    @BindView(R.id.langToggleSwitch) ToggleSwitch hymnDetailsToggleSwitch;
     private int textProgress = 18;
     private final int textDefault = 18;
     private String hymnStanzaAndChorusReceived = "";
@@ -50,16 +52,22 @@ public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnCha
         ButterKnife.bind(this);
 
         setSupportActionBar(hymnDetailsToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("TAC HYMNS");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
 
         getSentDetails();
 
-        setToggleSwitchCheckPosition(getIntent().getStringExtra("HYMNCLIKCKER"));
+        setToggleSwitchCheckPosition(getIntent().getStringExtra(EnglishHymnFragment.HYMN_SELECTION));
     }
 
     private void getSentDetails() {
-        positionClicked = getIntent().getIntExtra("POSITION", 0);
+        positionClicked = getIntent().getIntExtra(EnglishHymnFragment.POSITION_SELECTED, 0);
 
-        englishDataReceived = DataFeeder.getListData();
+        englishDataReceived = DataFeeder.getEnglishData();
         yorubaDataReceived = DataFeeder.getYorubaData();
     }
 
@@ -75,14 +83,14 @@ public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnCha
                     positionClicked++;
                 } else {
                     changeHymn(positionIndicator, 1);
-
                 }
                 break;
             case R.id.forwardButton:
                 if (++positionClicked >= englishDataReceived.size()) {
                     showToast("Last Hymn Reached");
                     positionClicked--;
-                } else {
+                }
+                else {
                     changeHymn(positionIndicator, 2);
                     switch (positionIndicator) {
                         case 0:
@@ -156,21 +164,21 @@ public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnCha
     private void setToggleSwitchCheckPosition(String hymnClicker) {
         //Set the default toggle switch position based on what language the hymn is clicked from
         switch (hymnClicker) {
-            case "ENG":
+            case "ENGLISH_SELECTION":
                 positionIndicator = 0;
                 hymnDetailsToggleSwitch.setCheckedPosition(positionIndicator);
                 inflateViews(englishDataReceived, positionClicked);
                 break;
-            case "YOR":
+            case "YORUBA_SELECTION":
                 positionIndicator = 1;
                 hymnDetailsToggleSwitch.setCheckedPosition(positionIndicator);
                 inflateViews(yorubaDataReceived, positionClicked);
                 break;
-            case "HAU":
+            case "HAUSA_SELECTION":
                 positionIndicator = 2;
                 hymnDetailsToggleSwitch.setCheckedPosition(positionIndicator);
                 break;
-            case "IGBO":
+            case "IGBO_SELECTION":
                 positionIndicator = 3;
                 hymnDetailsToggleSwitch.setCheckedPosition(positionIndicator);
                 break;
@@ -216,8 +224,8 @@ public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnCha
         dialog.getWindow().setBackgroundDrawableResource(R.color.white);
         dialog.setCancelable(true);
 
-        final TextView textSizeIndicator = (TextView) dialog.getWindow().findViewById(R.id.tv_textSizeIndicator);
-        SeekBar textSizeSeekBar = (SeekBar) dialog.getWindow().findViewById(R.id.textSizeSeeker);
+        final TextView textSizeIndicator = dialog.getWindow().findViewById(R.id.tv_textSizeIndicator);
+        SeekBar textSizeSeekBar = dialog.getWindow().findViewById(R.id.textSizeSeeker);
 
         textSizeSeekBar.setProgress(textProgress);
         textSizeIndicator.setText(String.valueOf(textProgress));
@@ -249,13 +257,15 @@ public class HymnDetails extends AppCompatActivity implements ToggleSwitch.OnCha
     }
 
     private void shareHymn(String hymnStanzaAndChorusReceived, String hymnNumberTitleReceived, String hymnScriptureReceived) {
-        String textToShare = hymnNumberTitleReceived + "\n" + hymnScriptureReceived + "\n" + hymnStanzaAndChorusReceived;
+        StringBuilder textToShare = new StringBuilder();
+        textToShare.append(hymnNumberTitleReceived + "\n" + hymnScriptureReceived + "\n" + hymnStanzaAndChorusReceived);
+        textToShare.append(" - Shared from TAC WAZOBIA Hymn");
 
         //Method to create the sharing text for the hymn clicked
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
         sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "SHARE Hymn");
-        sharingIntent.putExtra(Intent.EXTRA_TEXT, textToShare);
+        sharingIntent.putExtra(Intent.EXTRA_TEXT, textToShare.toString());
         startActivity(Intent.createChooser(sharingIntent, "Share Via: "));
     }
 

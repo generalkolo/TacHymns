@@ -11,26 +11,26 @@ import android.view.ViewGroup;
 import com.llollox.androidtoggleswitch.widgets.ToggleSwitch;
 import com.semanientreprise.tachymns.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RulesOfBelieveFrag extends Fragment implements ToggleSwitch.OnChangeListener {
 
-    @Bind(R.id.langToggleSwitch) ToggleSwitch rulesOfBelieveToggleSwitch;
+    @BindView(R.id.langToggleSwitch) ToggleSwitch rulesOfBelieveToggleSwitch;
+    private Unbinder unbinder;
 
-    public RulesOfBelieveFrag() {
-        // Required empty public constructor
-    }
+    public RulesOfBelieveFrag() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.rules_of_believe_fragment, container, false);
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
 
         //Set the position of the Selector and set the onChangeListener
         rulesOfBelieveToggleSwitch.setCheckedPosition(0);
@@ -71,6 +71,6 @@ public class RulesOfBelieveFrag extends Fragment implements ToggleSwitch.OnChang
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+        unbinder.unbind();
     }
 }

@@ -8,6 +8,8 @@
         android:id="@+id/langToggleSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/languages" />
+        android:entries="@array/languages"
+        android:textSize="17sp"
+        />
 
 </RelativeLayout>

@@ -7,9 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.semanientreprise.tachymns.Custom.CustomItemClickListener;
+import com.semanientreprise.tachymns.utils.CustomItemClickListener;
 import com.semanientreprise.tachymns.R;
 import com.semanientreprise.tachymns.model.SongsGAndS;
 
@@ -69,14 +68,15 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.HymnViewHolder
         }
 
         class HymnViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+            //TODO: Use butterknife injection here bud
             private TextView songTitle;
             private ImageView favoriteImage;
             Context c;
 
             public HymnViewHolder(View itemView) {
                 super(itemView);
-                songTitle = (TextView) itemView.findViewById(R.id.song_text);
-                favoriteImage = (ImageView) itemView.findViewById(R.id.favoriteImage);
+                songTitle = itemView.findViewById(R.id.song_text);
+                favoriteImage = itemView.findViewById(R.id.favoriteImage);
                 favoriteImage.setOnClickListener(this);
                 c = itemView.getContext();
             }

@@ -1,4 +1,4 @@
-package com.semanientreprise.tachymns.Activity;
+package com.semanientreprise.tachymns.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +10,13 @@ import android.widget.TextView;
 
 import com.semanientreprise.tachymns.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class Splash extends AppCompatActivity implements Animation.AnimationListener {
-    @Bind(R.id.splash_img) ImageView iv;
-    @Bind(R.id.onefold_txt) TextView oneFold_text;
-    @Bind(R.id.semani_txt) TextView semani_text;
+    @BindView(R.id.splash_img) ImageView iv;
+    @BindView(R.id.onefold_txt) TextView oneFold_text;
+    @BindView(R.id.semani_txt) TextView semani_text;
 
 
     @Override

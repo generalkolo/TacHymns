@@ -49,7 +49,7 @@
         android:layout_below="@+id/sort_HymnNumberView"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_sort_black_24dp" />
+        android:src="@drawable/ic_sort_white_24dp" />
 
     <TextView
         android:id="@+id/sortHymnChorus"

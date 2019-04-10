@@ -17,53 +17,51 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/mToolbar"
+        android:layout_marginBottom="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_extra_small"
         android:layout_marginRight="@dimen/margin_extra_small"
         android:layout_marginTop="@dimen/margin_extra_small"
-        android:src="@drawable/ic_arrow_back_black"
         android:background="@drawable/rounded_corners"
-        />
+        android:src="@drawable/ic_arrow_back_black" />
 
     <ImageView
         android:id="@+id/forwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/mToolbar"
         android:layout_marginLeft="@dimen/margin_extra_small"
         android:layout_marginRight="@dimen/margin_extra_small"
         android:layout_marginTop="@dimen/margin_extra_small"
-        android:src="@drawable/ic_arrow_forward_black"
-        android:background="@drawable/rounded_corners"/>
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@drawable/rounded_corners"
+        android:src="@drawable/ic_arrow_forward_black" />
 
     <include
-        layout="@layout/languages_toggle"
         android:id="@+id/langToggleSwitchDetails"
+        layout="@layout/languages_toggle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mToolbar"
-        android:layout_marginTop="@dimen/margin_extra_small"
-        android:layout_toLeftOf="@+id/forwardButton"
-        android:layout_toRightOf="@+id/backButton"
-        android:entries="@array/languages"
-        />
+        android:entries="@array/languages" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/langToggleSwitchDetails"
-        android:layout_marginLeft="@dimen/margin_small"
-        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium_small"
+        android:layout_marginRight="@dimen/margin_medium_small"
+        android:layout_marginTop="@dimen/margin_extra_small"
         android:orientation="vertical">
 
         <TextView
-
             android:id="@+id/hymnNumberTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium_small"
+            android:fontFamily="monospace"
             android:gravity="center"
             android:text="@string/hymn_number_title_dummy"
             android:textColor="@color/red"
@@ -74,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium_small"
+            android:fontFamily="sans-serif-smallcaps"
             android:gravity="center"
             android:text="@string/hymn_scripture_dummy"
             android:textColor="@color/ash"
@@ -81,12 +80,16 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            >
+
             <TextView
                 android:id="@+id/hymnStanzas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="@font/gs_regular"
                 android:text="@string/hymn_stanzas_dummy"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
